@@ -4,8 +4,7 @@ const cardModel = require("../../models/card");
 
 export default async function handler(req, res) {
   const { name, image } = req.body;
-  const existingCard = await cardModel.findOne({});
-  arrayChecker(keywords);
+  const existingCard = await cardModel.findOne({ name });
   if (req.method !== "POST") {
     console.log("Method not allowed");
     res.status(405).redirect("/addcard");
