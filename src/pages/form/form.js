@@ -7,6 +7,7 @@
   <input type="text" id="image" name="image" required>
     <br />
   </input>
+  <button type="submit">Submit</button>
 </form>;
 
 // use testing playground to find correct jest syntax
