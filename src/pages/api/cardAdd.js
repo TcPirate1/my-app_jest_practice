@@ -8,7 +8,6 @@ export default async function handler(req, res) {
   if (req.method !== "POST") {
     console.log("Method not allowed");
     res.status(405).redirect("/addcard");
-    res.status(400).redirect("/addcard");
   } else {
     const card = await cardModel.create({
       name,

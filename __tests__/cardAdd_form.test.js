@@ -28,8 +28,8 @@ describe("Form", () => {
 
     //Uncomment below tests to test error messages
 
-    // expect(name).toHaveAccessibleErrorMessage(/This field is required/i);
-    // expect(image).toHaveAccessibleErrorMessage(/This field is required/i);
+    expect(name).toHaveAccessibleErrorMessage(/This field is required/i);
+    expect(image).toHaveAccessibleErrorMessage(/This field is required/i);
   });
 });
 
