@@ -1,6 +1,6 @@
 require("dotenv").config();
-require("../../mongoDB").connect();
-const cardModel = require("../../models/card");
+require("./mongoDB").connect();
+const cardModel = require("./models/card");
 
 export default async function handler(req, res) {
   const { name, image } = req.body;

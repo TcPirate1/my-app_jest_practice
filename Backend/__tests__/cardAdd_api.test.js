@@ -1,4 +1,4 @@
-import handler from "../src/pages/api/cardAdd";
+import handler from "../srcs/cardAdd";
 
 describe("cardAdd", () => {
   test("Should return 405 if method is not POST", async () => {
